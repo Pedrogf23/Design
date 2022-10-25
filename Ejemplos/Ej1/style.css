@@ -1,0 +1,20 @@
+body {
+    background-color: bisque;
+}
+h1 {
+    color: darkorchid;
+    background-color: darkgray;
+}
+ol li {
+    color: deeppink;
+}
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p > span {
+    color: green;
+}
+p + p {
+    color: mediumspringgreen;
+}
