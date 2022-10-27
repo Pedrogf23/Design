@@ -70,7 +70,7 @@ ul.listado li:nth-child(3) {
 }
 em span:only-child {
     color: red;
-}*/
+}
 .ordenado li:first-of-type {
     color: lightseagreen;
 }
@@ -86,4 +86,11 @@ em span:only-child {
 .ordenado :not(li) {
     color: rosybrown;
     font-size: 0.5em;
+}*/
+
+ul a:link {
+    color: blue;
+}
+ul a:visited {
+    color: orange;
 }
