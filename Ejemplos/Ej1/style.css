@@ -86,11 +86,13 @@ em span:only-child {
 .ordenado :not(li) {
     color: rosybrown;
     font-size: 0.5em;
-}*/
-
+}
 ul a:link {
     color: blue;
 }
 ul a:visited {
     color: orange;
+}*/
+ul::before {
+    content: 'A';
 }
