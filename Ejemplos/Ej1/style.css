@@ -86,7 +86,7 @@ em span:only-child {
 .ordenado :not(li) {
     color: rosybrown;
     font-size: 0.5em;
-}
+} 
 ul a:link {
     color: blue;
 }
@@ -95,4 +95,19 @@ ul a:visited {
 }*/
 ul::before {
     content: 'A';
+}
+p {
+    font-family: 'Blackout', sans-serif;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+}
+.degradado {
+    width: 100%;
+    height: 300px;
+    border: solid black 1px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+}
+@font-face {
+    font-family: 'Blackout';
+    src: url('../fonts/Blackout.otf') format('opentype');
 }
