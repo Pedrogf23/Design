@@ -15,9 +15,9 @@
                     <fieldset>
                         <legend>Datos personales</legend>
                         <p>
-                            <label for="nombre">Nombre:</label> <input type="text" name="nombre" placeholder="Obligatorio" required /> <br />
+                            <label for="nombre">Nombre:</label> <input type="text" name="nombre" placeholder="Obligatorio" required size="20"/> <br />
                             <br />
-                            <label for="apellidos">Apellidos:</label> <input type="text" name="apellidos" placeholder="Obligatorio" required /> <br />
+                            <label for="apellidos">Apellidos:</label> <input type="text" name="apellidos" placeholder="Obligatorio" required size="45"/> <br />
                             <p>
                                 <fieldset>
                                     <legend>Edad:</legend>
@@ -39,21 +39,21 @@
                                     <label for="check1">Cine y Televisión</label><input type="checkbox" name="check1" /><br />
                                 </fieldset>
                             </p>
-                            <label for="cp">Codigo postal:</label> <input type="text" name="cp" />
+                            <label for="cp">Codigo postal:</label> <input type="text" name="cp" class="cp" pattern="\d{5}"/>
                         </p>
                     </fieldset>
                 </p>
                 <p>
                     <fieldset>
                         <legend>Otros datos</legend>
-                        <p>Color favorito</p>
+                        <p class="titulo">Color favorito</p>
                         <p>
-                            <input type="radio" name="color" /> <label for="color">Rojo</label>
-                            <input type="radio" name="color" /> <label for="color">Azul</label>
-                            <input type="radio" name="color" /> <label for="color">Amarillo</label>
-                            <input type="radio" name="color" /> <label for="color">Verde</label>
+                            <input type="radio" name="color" /><label for="color">Rojo</label>
+                            <input type="radio" name="color" /><label for="color">Azul</label>
+                            <input type="radio" name="color" /><label for="color">Amarillo</label>
+                            <input type="radio" name="color" /><label for="color">Verde</label>
                         </p>
-                        <p>Asignaturas favoritas</p>
+                        <p  class="titulo">Asignaturas favoritas</p>
                         <p>
                             <label for="dwec">DWEC</label> <input type="checkbox" name="dwec" /> <br />
                             <label for="dwes">DWES</label> <input type="checkbox" name="dwes" /> <br />
@@ -61,11 +61,15 @@
                             <label for="daw">DAW</label> <input type="checkbox" name="daw" /> <br />
                             <label for="eiem">EIEM</label> <input type="checkbox" name="eiem" /> <br />
                         </p>
-                        <p>Probabilidad de aprobar</p>
+                        <p  class="titulo">Probabilidad de aprobar</p>
                         <p>
                             <label for="prob">Porentaje</label> <input type="number" name="prob" value="50" min="0" max="100">
                         </p>
                     </fieldset>
+                </p>
+                <p>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar formulario">
+                    <input type="reset" name="reiniciar" id="reiniciar" value="Reiniciar formulario">
                 </p>
             </form>
         </div>
