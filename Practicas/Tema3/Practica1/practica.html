@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Practica 1 Tema 3</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <h1>Introduzca datos</h1>
+            <form action="#">
+                <p>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <p>
+                            <label for="nombre">Nombre:</label> <input type="text" name="nombre" placeholder="Obligatorio" required /> <br />
+                            <br />
+                            <label for="apellidos">Apellidos:</label> <input type="text" name="apellidos" placeholder="Obligatorio" required /> <br />
+                            <p>
+                                <fieldset>
+                                    <legend>Edad:</legend>
+                                    <input type="radio" name="edad" /><label for="edad">18 a 25</label>
+                                    <input type="radio" name="edad" /><label for="edad">26 a 35</label>
+                                    <input type="radio" name="edad" /><label for="edad">36 a 45</label>
+                                    <input type="radio" name="edad" /><label for="edad">46 a 55</label>
+                                    <input type="radio" name="edad" /><label for="edad">Mayor de 55</label>
+                                    <input type="radio" name="edad" checked/><label for="edad">NS/NC</label>
+                                </fieldset>
+                            </p>
+                            <p>
+                                <fieldset>
+                                    <legend>Intereses:</legend>
+                                    <label for="check1">Arte y Literatura</label><input type="checkbox" name="check1" /><br />
+                                    <label for="check1">Ciencia y Tecnología</label><input type="checkbox" name="check1" /><br />
+                                    <label for="check1">Política y Sociedad</label><input type="checkbox" name="check1" /><br />
+                                    <label for="check1">Ocio y Deporte</label><input type="checkbox" name="check1" /><br />
+                                    <label for="check1">Cine y Televisión</label><input type="checkbox" name="check1" /><br />
+                                </fieldset>
+                            </p>
+                            <label for="cp">Codigo postal:</label> <input type="text" name="cp" />
+                        </p>
+                    </fieldset>
+                </p>
+                <p>
+                    <fieldset>
+                        <legend>Otros datos</legend>
+                        <p>Color favorito</p>
+                        <p>
+                            <input type="radio" name="color" /> <label for="color">Rojo</label>
+                            <input type="radio" name="color" /> <label for="color">Azul</label>
+                            <input type="radio" name="color" /> <label for="color">Amarillo</label>
+                            <input type="radio" name="color" /> <label for="color">Verde</label>
+                        </p>
+                        <p>Asignaturas favoritas</p>
+                        <p>
+                            <label for="dwec">DWEC</label> <input type="checkbox" name="dwec" /> <br />
+                            <label for="dwes">DWES</label> <input type="checkbox" name="dwes" /> <br />
+                            <label for="diw">DIW</label> <input type="checkbox" name="diw" checked/> <br />
+                            <label for="daw">DAW</label> <input type="checkbox" name="daw" /> <br />
+                            <label for="eiem">EIEM</label> <input type="checkbox" name="eiem" /> <br />
+                        </p>
+                        <p>Probabilidad de aprobar</p>
+                        <p>
+                            <label for="prob">Porentaje</label> <input type="number" name="prob" value="50" min="0" max="100">
+                        </p>
+                    </fieldset>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
