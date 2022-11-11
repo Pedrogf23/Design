@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback form</title>
+    <link rel="icon" href="../img/favicon.png" />
+  </head>
+  <body>
+    <table>
+      <form action="feedback.php" method="post">
+        <tr>
+          <th colspan="2">Website feedback</th>
+        </tr>
+        <tr>
+          <td colspan="2">Please fill out this feedback form so we can ensure a top quality experience to al of our visitors.</td>
+        </tr>
+        <tr>
+          <td><label for="email">Email: </label> <input type="text" name="email" size="40" /></td>
+          <td><label for="name">Name: </label> <input type="text" name="name" size="40" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td>Is this your first visit to the website?</td>
+          <td>Were you able to find what you needed?</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="visit" value="Yes" /><label for="visit">Yes</label></td>
+          <td><input type="radio" name="need" value="Yes" /><label for="visit">Yes</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="visit" value="No" /><label for="visit">No</label></td>
+          <td><input type="radio" name="need" value="No" /><label for="visit">No</label></td>
+        </tr>
+        <tr>
+          <td><label for="reason">What is the primary reason for you to visit the website?</label></td>
+          <td><label for="seeking">If you didn't find what you needed, please tell us, what info were you seeking?</label></td>
+        </tr>
+        <tr>
+          <td><textarea name="reason" cols="45" rows="5"></textarea></td>
+          <td><textarea name="seeking" cols="65" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td>How easy is it to find information on the site?</td>
+          <td>What is the key likelihood that you will return to the site?</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="easy" value="Very easy" />Very easy</td>
+          <td><input type="radio" name="return" value="Extremely likely" />Extremely likely</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="easy" value="Easy" />Easy</td>
+          <td><input type="radio" name="return" value="Very likely" />Very likely</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="easy" value="Average" />Average</td>
+          <td><input type="radio" name="return" value="Moderate likely" />Moderate likely</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="easy" value="Difficult" />Difficult</td>
+          <td><input type="radio" name="return" value="Slightly likely" />Slightly likely</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="easy" value="Very difficult" />Very difficult</td>
+          <td><input type="radio" name="return" value="Unlikely to return" />Unlikely to return</td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><label for="comments">Please, provide additional comments or suggestions.</label></td>
+        </tr>
+        <tr>
+          <td colspan="2"><textarea name="comments" id="" cols="115" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" name="submit" value="Send" /> <input type="reset" name="reset" value="Reset" /></td>
+        </tr>
+      </form>
+    </table>
+    <button><a href="index.html">Go back</a></button>
+  </body>
+</html>
