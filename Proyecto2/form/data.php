@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Show data</title>
-    </head>
-    <body>
-        <table border=1>
-            <tr>
-                <th colspan="2">Personal Information</th>
-            </tr>
-            <tr>
-                <td>Title:</td>
-                <td><?= $_POST['title']; ?></td>
-            </tr>
-            <tr>
-                <td>First name:</td>
-                <td><?= $_POST['fName']; ?></td>
-            </tr>
-            <tr>
-                <td>Last name:</td>
-                <td><?= $_POST['lName']; ?></td>
-            </tr>
-            <tr>
-                <td>Birthdate:</td>
-                <td><?= $_POST['bDate']; ?></td>
-            </tr>
-            <?php
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Show data</title>
+</head>
+
+<body>
+  <table border=1>
+    <tr>
+      <th colspan="2">Personal Information</th>
+    </tr>
+    <tr>
+      <td>Title:</td>
+      <td><?= $_POST['title']; ?></td>
+    </tr>
+    <tr>
+      <td>First name:</td>
+      <td><?= $_POST['fName']; ?></td>
+    </tr>
+    <tr>
+      <td>Last name:</td>
+      <td><?= $_POST['lName']; ?></td>
+    </tr>
+    <tr>
+      <td>Birthdate:</td>
+      <td><?= $_POST['bDate']; ?></td>
+    </tr>
+    <?php
             if(!empty($_POST['city'])){
                 echo
                 "<tr>
@@ -57,16 +59,16 @@
                 </tr>";
             }
             ?>
-        </table>
-        <table border=1>
-            <tr>
-                <th colspan="2">Subscription Information</th>
-            </tr>
-            <tr>
-                <td>Subscription type:</td>
-                <td><?= $_POST['sType']; ?></td>
-            </tr>
-            <?php
+  </table>
+  <table border=1>
+    <tr>
+      <th colspan="2">Subscription Information</th>
+    </tr>
+    <tr>
+      <td>Subscription type:</td>
+      <td><?= $_POST['sType']; ?></td>
+    </tr>
+    <?php
             if(!empty($_POST['sCode'])){
                 echo
                 "<tr>
@@ -101,20 +103,20 @@
                 </tr>";
             }
             ?>
-        </table>
-        <table border=1>
-            <tr>
-                <th colspan="2">Billing Details</th>
-            </tr>
-            <tr>
-                <td>Credit Card Type:</td>
-                <td><?= $_POST['creditCardType']; ?></td>
-            </tr>
-            <tr>
-                <td>Card Number:</td>
-                <td><?= $_POST['cardNumber']; ?></td>
-            </tr>
-            <?php
+  </table>
+  <table border=1>
+    <tr>
+      <th colspan="2">Billing Details</th>
+    </tr>
+    <tr>
+      <td>Credit Card Type:</td>
+      <td><?= $_POST['creditCardType']; ?></td>
+    </tr>
+    <tr>
+      <td>Card Number:</td>
+      <td><?= $_POST['cardNumber']; ?></td>
+    </tr>
+    <?php
                 if(!empty($_POST['passwd'])){
                     echo
                     "<tr>
@@ -123,20 +125,21 @@
                 </tr>";
                 }
             ?>
-        </table>
-        <?php
+  </table>
+  <?php
         if(!empty($_POST['feedback'])){
             ?>
-            <table border=1>
-                <tr>
-                    <th>Feedback</th>
-                </tr>
-                <tr>
-                    <td style="width: 300px;"><?= $_POST['feedback']; ?></td>
-                </tr>
-            </table>
-            <?php
+  <table border=1>
+    <tr>
+      <th>Feedback</th>
+    </tr>
+    <tr>
+      <td style="width: 300px;"><?= $_POST['feedback']; ?></td>
+    </tr>
+  </table>
+  <?php
         }
         ?>
-    </body>
+</body>
+
 </html>

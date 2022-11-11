@@ -94,20 +94,20 @@ ul a:visited {
     color: orange;
 }*/
 ul::before {
-    content: 'A';
+  content: 'A';
 }
 p {
-    font-family: 'Blackout', sans-serif;
-    word-spacing: 10px;
-    letter-spacing: 10px;
+  font-family: 'Blackout', sans-serif;
+  word-spacing: 10px;
+  letter-spacing: 10px;
 }
 .degradado {
-    width: 100%;
-    height: 300px;
-    border: solid black 1px;
-    background: radial-gradient(closest-corner at 30%, peru, pink);
+  width: 100%;
+  height: 300px;
+  border: solid black 1px;
+  background: radial-gradient(closest-corner at 30%, peru, pink);
 }
 @font-face {
-    font-family: 'Blackout';
-    src: url('../fonts/Blackout.otf') format('opentype');
+  font-family: 'Blackout';
+  src: url('../fonts/Blackout.otf') format('opentype');
 }

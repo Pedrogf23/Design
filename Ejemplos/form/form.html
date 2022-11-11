@@ -1,137 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Formulario</title>
-    </head>
-    <body>
-        <form name="form1" action="#" method="get">
-            <fieldset>
-                <legend>Datos personales</legend>
-                <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" size="15" maxlength="20" required />
-                </p>
-                <p>
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" name="apellidos" size="50" maxlength="50" placeholder="Introduce tus dos apellidos." />
-                </p>
-                <p>
-                    <label for="edad">Edad:</label>
-                    <input style="width: 30px" type="number" name="edad" value="18" min="14" max="99" readonly />
-                </p>
-                <p>
-                    <label for="f_nac">Fecha de Nacimiento:</label>
-                    <input type="date" name="f_nac" value="2003-06-26" />
-                </p>
-            </fieldset>
-            <br />
-            <fieldset>
-                <legend>Otros datos</legend>
-                <p>
-                    <label for="dir">Dirección:</label>
-                    <input type="text" name="dir" />
-                    <label for="email">Email</label>
-                    <input type="email" name="email" autofocus />
-                </p>
-                <p>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" name="telefono" />
-                    <!--hidden-->
-                </p>
-                <p>
-                    <label for="fav_color">Color favorito:</label>
-                    <input type="color" name="fav_color" value="#ca83be" />
-                </p>
-                <p>
-                    <label for="pag_ini">Página de inicio:</label>
-                    <input type="url" name="pag_ini" disabled value="https://www.google.com" />
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>¿Qué piensas de este formulario?</legend>
-                <p>
-                    <input type="radio" name="option" id="si" value="si" checked />
-                    <label for="si">¡Me encanta!</label>
-                    <input type="radio" name="option" id="no" value="no" />
-                    <label for="no">¡Lo odio!</label>
-                    <input type="radio" name="option" id="nsnc" value="nsnc" />
-                    <label for="nsnc">No sé qué decir...</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="o1" id="informatica" value="a" checked />
-                    <label for="o1">Informática</label>
-                    <br />
-                    <input type="checkbox" name="o2" id="deportes" value="b" />
-                    <label for="o2">Deportes</label>
-                    <br />
-                    <input type="checkbox" name="o3" id="lectura" value="c" />
-                    <label for="o3">Lectura</label>
-                    <br />
-                    <input type="checkbox" name="o4" id="cineYtv" value="d" />
-                    <label for="o4">Cine y TV</label>
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>Un par de listas</legend>
-                <p>
-                    <label for="lista1">Asignatura favorita:</label>
-                    <select name="lista1" id="lista1" required>
-                        <option value="" selected disabled hidden>-- Selecciona una asignatura --</option>
-                        <option value="o1">Diseño de Interfaces de Web</option>
-                        <option value="o2">Desarrollo Web en Entorno Servidor</option>
-                        <option value="o3">Desarrollo Web en Entorno Cliente</option>
-                        <option value="o4">Despliegue de Aplicaciones Web</option>
-                        <option value="o5">Empresa e Iniciativa Emprendedora</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="lista2">Mes favorito:</label>
-                    <select name="lista2" id="lista2">
-                        <option value="" selected disabled hidden>-- Selecciona un mes --</option>
-                        <optgroup label="Primavera">
-                            <option value="v1">Marzo</option>
-                            <option value="v2">Abril</option>
-                            <option value="v3">Mayo</option>
-                        </optgroup>
-                        <optgroup label="Verano">
-                            <option value="v4">Junio</option>
-                            <option value="v5">Julio</option>
-                            <option value="v6">Agosto</option>
-                        </optgroup>
-                        <optgroup label="Otoño">
-                            <option value="v7">Septienbre</option>
-                            <option value="v8">Octubre</option>
-                            <option value="v9">Noviembre</option>
-                        </optgroup>
-                        <optgroup label="Invierno">
-                            <option value="v10">Diciembre</option>
-                            <option value="v11">Enero</option>
-                            <option value="v12">Febrero</option>
-                        </optgroup>
-                    </select>
-                </p>
-                <p>
-                    <label for="lista3">Provincia andaluza favorita:</label>
-                    <input list="lista3" />
-                    <datalist id="lista3" name="lista3">
-                        <option value="o1">Cádiz</option>
-                        <option value="o2">Málaga</option>
-                        <option value="o3">Almería</option>
-                        <option value="o4">Granada</option>
-                        <option value="o5">Jaén</option>
-                        <option value="o6">Huelva</option>
-                        <option value="o7">Sevilla</option>
-                        <option value="o8">Córdoba</option>
-                    </datalist>
-                </p>
-            </fieldset>
-            <p>
-                <input type="reset" name="reset" value="Limpar" />
-                <input type="submit" name="enviar" value="Enviar" />
-            </p>
-        </form>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form name="form1" action="#" method="get">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" size="15" maxlength="20" required />
+        </p>
+        <p>
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" name="apellidos" size="50" maxlength="50" placeholder="Introduce tus dos apellidos." />
+        </p>
+        <p>
+          <label for="edad">Edad:</label>
+          <input style="width: 30px" type="number" name="edad" value="18" min="14" max="99" readonly />
+        </p>
+        <p>
+          <label for="f_nac">Fecha de Nacimiento:</label>
+          <input type="date" name="f_nac" value="2003-06-26" />
+        </p>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Otros datos</legend>
+        <p>
+          <label for="dir">Dirección:</label>
+          <input type="text" name="dir" />
+          <label for="email">Email</label>
+          <input type="email" name="email" autofocus />
+        </p>
+        <p>
+          <label for="telefono">Teléfono:</label>
+          <input type="text" name="telefono" />
+          <!--hidden-->
+        </p>
+        <p>
+          <label for="fav_color">Color favorito:</label>
+          <input type="color" name="fav_color" value="#ca83be" />
+        </p>
+        <p>
+          <label for="pag_ini">Página de inicio:</label>
+          <input type="url" name="pag_ini" disabled value="https://www.google.com" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>¿Qué piensas de este formulario?</legend>
+        <p>
+          <input type="radio" name="option" id="si" value="si" checked />
+          <label for="si">¡Me encanta!</label>
+          <input type="radio" name="option" id="no" value="no" />
+          <label for="no">¡Lo odio!</label>
+          <input type="radio" name="option" id="nsnc" value="nsnc" />
+          <label for="nsnc">No sé qué decir...</label>
+        </p>
+        <p>
+          <input type="checkbox" name="o1" id="informatica" value="a" checked />
+          <label for="o1">Informática</label>
+          <br />
+          <input type="checkbox" name="o2" id="deportes" value="b" />
+          <label for="o2">Deportes</label>
+          <br />
+          <input type="checkbox" name="o3" id="lectura" value="c" />
+          <label for="o3">Lectura</label>
+          <br />
+          <input type="checkbox" name="o4" id="cineYtv" value="d" />
+          <label for="o4">Cine y TV</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Un par de listas</legend>
+        <p>
+          <label for="lista1">Asignatura favorita:</label>
+          <select name="lista1" id="lista1" required>
+            <option value="" selected disabled hidden>-- Selecciona una asignatura --</option>
+            <option value="o1">Diseño de Interfaces de Web</option>
+            <option value="o2">Desarrollo Web en Entorno Servidor</option>
+            <option value="o3">Desarrollo Web en Entorno Cliente</option>
+            <option value="o4">Despliegue de Aplicaciones Web</option>
+            <option value="o5">Empresa e Iniciativa Emprendedora</option>
+          </select>
+        </p>
+        <p>
+          <label for="lista2">Mes favorito:</label>
+          <select name="lista2" id="lista2">
+            <option value="" selected disabled hidden>-- Selecciona un mes --</option>
+            <optgroup label="Primavera">
+              <option value="v1">Marzo</option>
+              <option value="v2">Abril</option>
+              <option value="v3">Mayo</option>
+            </optgroup>
+            <optgroup label="Verano">
+              <option value="v4">Junio</option>
+              <option value="v5">Julio</option>
+              <option value="v6">Agosto</option>
+            </optgroup>
+            <optgroup label="Otoño">
+              <option value="v7">Septienbre</option>
+              <option value="v8">Octubre</option>
+              <option value="v9">Noviembre</option>
+            </optgroup>
+            <optgroup label="Invierno">
+              <option value="v10">Diciembre</option>
+              <option value="v11">Enero</option>
+              <option value="v12">Febrero</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          <label for="lista3">Provincia andaluza favorita:</label>
+          <input list="lista3" />
+          <datalist id="lista3" name="lista3">
+            <option value="o1">Cádiz</option>
+            <option value="o2">Málaga</option>
+            <option value="o3">Almería</option>
+            <option value="o4">Granada</option>
+            <option value="o5">Jaén</option>
+            <option value="o6">Huelva</option>
+            <option value="o7">Sevilla</option>
+            <option value="o8">Córdoba</option>
+          </datalist>
+        </p>
+      </fieldset>
+      <p>
+        <input type="reset" name="reset" value="Limpar" />
+        <input type="submit" name="enviar" value="Enviar" />
+      </p>
+    </form>
+  </body>
 </html>
