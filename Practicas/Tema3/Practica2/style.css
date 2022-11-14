@@ -13,14 +13,12 @@ header {
   text-align: center;
   color: darkred;
   font-size: 2.3em;
-  border: solid 1px black;
   padding: 40px;
 }
 main {
   height: 65%;
   text-align: center;
   color: white;
-  border: solid 1px black;
 }
 div.content {
   display: inline-block;
@@ -50,31 +48,25 @@ div.content i:hover {
 }
 div p {
   text-align: center;
-  font-size: 1em;
-  margin: 100px;
+  margin: 50px;
+  margin-top: 0px;
+  font-size: 2em;
   color: #ff8c0000;
+  transform: scale(0.3) rotateZ(90deg);
   filter: blur(1px);
   text-align: center;
-  transform: rotateZ(90deg);
-  margin-top: 50px;
-  margin-bottom: 50px;
   transition-property: color, transform, filter;
   transition-duration: 3s;
 }
 div p:hover {
   color: darkorange;
-  transform: rotateZ(0deg);
+  transform: scale(1);
   filter: blur(0px);
-  font-size: 2em;
-  margin: 30px;
-  margin-top: -20px;
-  margin-bottom: -20px;
 }
 footer {
   height: 10%;
   text-align: center;
   color: darkorange;
   font-size: 3em;
-  border: solid 1px black;
   padding: 10px;
 }
