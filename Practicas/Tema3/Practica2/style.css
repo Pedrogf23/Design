@@ -1,0 +1,80 @@
+* {
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(180deg, darkorange, darkred 70%) no-repeat;
+  height: 100vh;
+}
+header {
+  height: 25%;
+  text-align: center;
+  color: darkred;
+  font-size: 2.3em;
+  border: solid 1px black;
+  padding: 40px;
+}
+main {
+  height: 65%;
+  text-align: center;
+  color: white;
+  border: solid 1px black;
+}
+div.content {
+  display: inline-block;
+  border: solid 4px white;
+  height: 100%;
+  width: 31%;
+  border-radius: 5px;
+  transition: background-color, 3s;
+  text-align: center;
+}
+div.content:hover {
+  background-color: indigo;
+}
+div.cycle {
+  margin: 0px 30px 0px 30px;
+}
+div.content i {
+  font-size: 200px;
+  margin: 50px;
+  margin-bottom: 30px;
+  transition: all, 3s;
+}
+div.content i:hover {
+  color: darkorange;
+  font-size: 230px;
+  margin-top: 20px;
+}
+div p {
+  text-align: center;
+  font-size: 1em;
+  margin: 100px;
+  color: #ff8c0000;
+  filter: blur(1px);
+  text-align: center;
+  transform: rotateZ(90deg);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition-property: color, transform, filter;
+  transition-duration: 3s;
+}
+div p:hover {
+  color: darkorange;
+  transform: rotateZ(0deg);
+  filter: blur(0px);
+  font-size: 2em;
+  margin: 30px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+footer {
+  height: 10%;
+  text-align: center;
+  color: darkorange;
+  font-size: 3em;
+  border: solid 1px black;
+  padding: 10px;
+}
