@@ -64,7 +64,7 @@ div p {
   transition: all, 3s;
 }
 div p:hover {
-  color: white;
+  color: #fff;
   transform: scale(1) rotateZ(0deg);
   filter: blur(0px);
 }

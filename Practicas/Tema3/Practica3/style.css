@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+div.contenedor h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+div.contenedor h2 {
+  font-family: 'Bangers', cursive;
+}
+div.contenedor {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, rgba(232, 95, 240, 1) 20%, rgba(62, 180, 240, 1) 40%, rgba(154, 240, 93, 1) 60%, rgba(250, 165, 72, 1) 80%);
+  background-size: 1000% 1000%;
+  animation: fondo 20s linear infinite;
+}
+
+@keyframes fondo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*
+Titulo:
+darkmagenta
+darkslategray
+darkorange
+crimson
+darkblue
+
+Bloque movil:
+darkred
+orangered
+gold
+darkgreen
+royalblue
+darkorchid
+Texto:
+black
+hotpink
+*/
