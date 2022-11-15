@@ -1,3 +1,70 @@
-/*
-Rehacer css desde 0, pero hacer las transiciones con scale y rotate
-*/
+* {
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(180deg, darkorange, darkred 70%) no-repeat;
+  height: 100vh;
+}
+header {
+  height: 20vh;
+  text-align: center;
+  color: darkred;
+  font-size: 2vw;
+  padding: 2vw;
+}
+main {
+  height: 70vh;
+  text-align: center;
+  color: white;
+}
+footer {
+  height: 10vh;
+  text-align: center;
+  color: darkorange;
+  font-size: 2.5vw;
+  font-weight: bold;
+  padding: 1vw;
+}
+
+div.content {
+  display: inline-block;
+  border: solid 4px white;
+  border-radius: 5px;
+  height: 100%;
+  width: 31%;
+  text-align: center;
+  padding: 1.5vw;
+  transition: all, 3s;
+}
+div.content:hover {
+  background-color: indigo;
+}
+div.cycle {
+  margin: 0 2vw 0 2vw;
+}
+div.content i {
+  font-size: 13vw;
+  transition: all, 3s;
+}
+div.content i:hover {
+  transform: scale(1.2);
+  color: darkorange;
+}
+div p {
+  text-align: center;
+  font-size: 2vw;
+  color: #ff8c0000;
+  transform: scale(0.3) rotateZ(45deg);
+  filter: blur(10px);
+  text-align: center;
+  padding: 5vw 2vw 3.5vw 2vw;
+  transition: all, 3s;
+}
+div p:hover {
+  color: #ff8c00;
+  transform: scale(1) rotateZ(0deg);
+  filter: blur(0px);
+}
