@@ -22,6 +22,7 @@ div.contenedor h2 {
   padding: 0 2vw 0 2vw;
   text-shadow: -1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff;
   animation: bloqueMovil 20s linear 1s infinite;
+  background-color: darkred;
 }
 div.contenedor {
   height: 100vh;
@@ -70,21 +71,24 @@ div.contenedor {
     color: black;
     background-color: darkred;
   }
-  20% {
+  16% {
     background-color: orangered;
   }
-  40% {
+  32% {
     background-color: gold;
   }
-  60% {
+  64% {
     background-color: darkgreen;
   }
   80% {
     background-color: royalblue;
   }
+  96% {
+    background-color: darkorchid;
+  }
   100% {
     color: hotpink;
-    background-color: darkorchid;
+    background-color: darkred;
   }
 }
 
