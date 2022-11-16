@@ -5,16 +5,29 @@
 }
 div.contenedor h1 {
   font-family: 'Abril Fatface', cursive;
+  border: 4px solid black;
+  text-align: center;
+  font-size: 5vw;
+  text-shadow: -1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff;
+  animation: titulo 10s linear infinite alternate;
+  margin-bottom: 1.5vw;
+  border-radius: 5px;
 }
 div.contenedor h2 {
   font-family: 'Bangers', cursive;
+  border: 4px solid black;
+  display: inline-block;
+  font-size: 3vw;
+  padding: 0 2vw 0 2vw;
+  text-shadow: -1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff;
 }
 div.contenedor {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(135deg, rgba(232, 95, 240, 1) 20%, rgba(62, 180, 240, 1) 40%, rgba(154, 240, 93, 1) 60%, rgba(250, 165, 72, 1) 80%);
   background-size: 1000% 1000%;
-  animation: fondo 20s linear infinite;
+  animation: fondo 30s linear infinite;
+  padding: 1.5vw;
 }
 
 @keyframes fondo {
@@ -29,14 +42,25 @@ div.contenedor {
   }
 }
 
-/*
-Titulo:
-darkmagenta
-darkslategray
-darkorange
-crimson
-darkblue
+@keyframes titulo {
+  0% {
+    background-color: darkblue;
+  }
+  25% {
+    background-color: darkmagenta;
+  }
+  50% {
+    background-color: darkslategray;
+  }
+  75% {
+    background-color: darkorange;
+  }
+  100% {
+    background-color: crimson;
+  }
+}
 
+/*
 Bloque movil:
 darkred
 orangered
