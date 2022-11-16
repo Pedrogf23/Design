@@ -39,6 +39,23 @@
   --delay1_6: calc(6 * var(--delay1_1));
   --delay1_7: calc(7 * var(--delay1_1));
   --delay1_8: calc(8 * var(--delay1_1));
+
+  --delay2: (var(--tiempo_anim2) / 20);
+  --delay2_1: calc(var(--delay1_8) + var(--tiempo_anim1));
+  --delay2_2: calc(var(--delay2_1) + var(--delay2));
+  --delay2_3: calc(var(--delay2_2) + var(--delay2));
+  --delay2_4: calc(var(--delay2_3) + var(--delay2));
+  --delay2_5: calc(var(--delay2_4) + var(--delay2));
+  --delay2_6: calc(var(--delay2_5) + var(--delay2));
+  --delay2_7: calc(var(--delay2_6) + var(--delay2));
+  --delay2_8: calc(var(--delay2_7) + var(--delay2));
+  --delay2_9: calc(var(--delay2_8) + var(--delay2));
+  --delay2_10: calc(var(--delay2_9) + var(--delay2));
+  --delay2_11: calc(var(--delay2_10) + var(--delay2));
+  --delay2_12: calc(var(--delay2_11) + var(--delay2));
+  --delay2_13: calc(var(--delay2_12) + var(--delay2));
+  --delay2_14: calc(var(--delay2_13) + var(--delay2));
+  --delay2_15: calc(var(--delay2_14) + var(--delay2));
 }
 
 body {
@@ -119,6 +136,52 @@ h3 {
   animation: anim1 var(--tiempo_anim1) var(--delay1_8) forwards;
 }
 
+.diagonal1 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_1) infinite forwards;
+}
+.diagonal2 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_2) infinite forwards;
+}
+.diagonal3 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_3) infinite forwards;
+}
+.diagonal4 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_4) infinite forwards;
+}
+.diagonal5 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_5) infinite forwards;
+}
+.diagonal6 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_6) infinite forwards;
+}
+.diagonal7 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_7) infinite forwards;
+}
+.diagonal8 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_8) infinite forwards;
+}
+.diagonal9 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_9) infinite forwards;
+}
+.diagonal10 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_10) infinite forwards;
+}
+.diagonal11 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_11) infinite forwards;
+}
+.diagonal12 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_12) infinite forwards;
+}
+.diagonal13 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_13) infinite forwards;
+}
+.diagonal14 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_14) infinite forwards;
+}
+.diagonal15 {
+  animation: anim2 var(--tiempo_anim2) var(--delay2_15) infinite forwards;
+}
+
 @keyframes anim1 {
   11% {
     background-color: var(--color1_1);
@@ -146,5 +209,32 @@ h3 {
   }
   100% {
     background-color: var(--color1_9);
+  }
+}
+
+@keyframes anim2 {
+  12% {
+    background-color: var(--color2_1);
+  }
+  24% {
+    background-color: var(--color2_2);
+  }
+  36% {
+    background-color: var(--color2_3);
+  }
+  48% {
+    background-color: var(--color2_4);
+  }
+  60% {
+    background-color: var(--color2_5);
+  }
+  72% {
+    background-color: var(--color2_6);
+  }
+  84% {
+    background-color: var(--color2_7);
+  }
+  96% {
+    background-color: var(--color2_8);
   }
 }
