@@ -31,7 +31,7 @@
   --color2_7: rgb(255, 135, 235);
   --color2_8: rgb(255, 255, 255);
 
-  --delay1_1: calc(var(--tiempo_anim1) / 8);
+  --delay1_1: calc(var(--tiempo_anim1) / 9);
   --delay1_2: calc(2 * var(--delay1_1));
   --delay1_3: calc(3 * var(--delay1_1));
   --delay1_4: calc(4 * var(--delay1_1));
@@ -92,57 +92,31 @@ h3 {
 }
 
 .fila1 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) forwards;
 }
 .fila2 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-delay: var(--delay1_1);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) var(--delay1_1) forwards;
 }
 .fila3 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-delay: var(--delay1_2);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) var(--delay1_2) forwards;
 }
 .fila4 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-delay: var(--delay1_3);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) var(--delay1_3) forwards;
 }
 .fila5 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-delay: var(--delay1_4);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) var(--delay1_4) forwards;
 }
 .fila6 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-delay: var(--delay1_5);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) var(--delay1_5) forwards;
 }
 .fila7 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-delay: var(--delay1_6);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) var(--delay1_6) forwards;
 }
 .fila8 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-delay: var(--delay1_7);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) var(--delay1_7) forwards;
 }
 .fila9 {
-  animation-name: anim1;
-  animation-duration: var(--tiempo_anim1);
-  animation-delay: var(--delay1_8);
-  animation-fill-mode: forwards;
+  animation: anim1 var(--tiempo_anim1) var(--delay1_8) forwards;
 }
 
 @keyframes anim1 {
