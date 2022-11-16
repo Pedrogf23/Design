@@ -21,7 +21,7 @@ h1 {
   text-align: center;
   font-family: 'Urbanist', sans-serif;
   letter-spacing: 2px;
-  font-size: 2.7em;
+  font-size: 2.4em;
   text-shadow: 1px 1px 5px var(--color_sombra), -1px -1px 5px var(--color_sombra);
   color: var(--color_texto);
 }
