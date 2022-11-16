@@ -9,7 +9,8 @@ div.contenedor h1 {
   text-align: center;
   font-size: 5vw;
   text-shadow: -1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff;
-  animation: titulo 10s linear infinite alternate;
+  animation: titulo 10s linear 5s infinite alternate;
+  background-color: darkblue;
   margin-bottom: 1.5vw;
   border-radius: 5px;
 }
@@ -20,13 +21,14 @@ div.contenedor h2 {
   font-size: 3vw;
   padding: 0 2vw 0 2vw;
   text-shadow: -1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff;
+  animation: bloqueMovil 20s linear 1s infinite;
 }
 div.contenedor {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(135deg, rgba(232, 95, 240, 1) 20%, rgba(62, 180, 240, 1) 40%, rgba(154, 240, 93, 1) 60%, rgba(250, 165, 72, 1) 80%);
-  background-size: 1000% 1000%;
-  animation: fondo 30s linear infinite;
+  background-size: 400% 400%;
+  animation: fondo 15s linear infinite;
   padding: 1.5vw;
 }
 
@@ -46,17 +48,43 @@ div.contenedor {
   0% {
     background-color: darkblue;
   }
-  25% {
+  20% {
     background-color: darkmagenta;
   }
-  50% {
+  40% {
     background-color: darkslategray;
   }
-  75% {
+  60% {
     background-color: darkorange;
   }
-  100% {
+  80% {
     background-color: crimson;
+  }
+  100% {
+    background-color: darkblue;
+  }
+}
+
+@keyframes bloqueMovil {
+  0% {
+    color: black;
+    background-color: darkred;
+  }
+  20% {
+    background-color: orangered;
+  }
+  40% {
+    background-color: gold;
+  }
+  60% {
+    background-color: darkgreen;
+  }
+  80% {
+    background-color: royalblue;
+  }
+  100% {
+    color: hotpink;
+    background-color: darkorchid;
   }
 }
 
@@ -68,7 +96,4 @@ gold
 darkgreen
 royalblue
 darkorchid
-Texto:
-black
-hotpink
 */
