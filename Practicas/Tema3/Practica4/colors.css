@@ -8,6 +8,37 @@
   --color_texto: #5a0075;
   --color_borde: #dd0a85;
   --color_sombra: whitesmoke;
+
+  --tiempo_anim1: 2s;
+  --tiempo_anim2: 15s;
+
+  --color1_1: rgb(24, 2, 35);
+  --color1_2: rgb(144, 28, 165);
+  --color1_3: rgb(225, 87, 187);
+  --color1_4: rgb(235, 168, 106);
+  --color1_5: rgb(233, 213, 140);
+  --color1_6: rgb(223, 178, 177);
+  --color1_7: rgb(208, 112, 166);
+  --color1_8: rgb(226, 178, 200);
+  --color1_9: rgb(255, 255, 255);
+
+  --color2_1: rgb(255, 0, 0);
+  --color2_2: rgb(255, 127, 0);
+  --color2_3: rgb(255, 255, 0);
+  --color2_4: rgb(0, 255, 0);
+  --color2_5: rgb(0, 0, 255);
+  --color2_6: rgb(148, 0, 211);
+  --color2_7: rgb(255, 135, 235);
+  --color2_8: rgb(255, 255, 255);
+
+  --delay1_1: calc(var(--tiempo_anim1) / 8);
+  --delay1_2: calc(2 * var(--delay1_1));
+  --delay1_3: calc(3 * var(--delay1_1));
+  --delay1_4: calc(4 * var(--delay1_1));
+  --delay1_5: calc(5 * var(--delay1_1));
+  --delay1_6: calc(6 * var(--delay1_1));
+  --delay1_7: calc(7 * var(--delay1_1));
+  --delay1_8: calc(8 * var(--delay1_1));
 }
 
 body {
@@ -21,7 +52,7 @@ h1 {
   text-align: center;
   font-family: 'Urbanist', sans-serif;
   letter-spacing: 2px;
-  font-size: 2.4em;
+  font-size: 2.3em;
   text-shadow: 1px 1px 5px var(--color_sombra), -1px -1px 5px var(--color_sombra);
   color: var(--color_texto);
 }
@@ -58,4 +89,88 @@ h3 {
   border: 2px solid var(--color_texto);
   width: 100px;
   height: 100px;
+}
+
+.fila1 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-fill-mode: forwards;
+}
+.fila2 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-delay: var(--delay1_1);
+  animation-fill-mode: forwards;
+}
+.fila3 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-delay: var(--delay1_2);
+  animation-fill-mode: forwards;
+}
+.fila4 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-delay: var(--delay1_3);
+  animation-fill-mode: forwards;
+}
+.fila5 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-delay: var(--delay1_4);
+  animation-fill-mode: forwards;
+}
+.fila6 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-delay: var(--delay1_5);
+  animation-fill-mode: forwards;
+}
+.fila7 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-delay: var(--delay1_6);
+  animation-fill-mode: forwards;
+}
+.fila8 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-delay: var(--delay1_7);
+  animation-fill-mode: forwards;
+}
+.fila9 {
+  animation-name: anim1;
+  animation-duration: var(--tiempo_anim1);
+  animation-delay: var(--delay1_8);
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim1 {
+  11% {
+    background-color: var(--color1_1);
+  }
+  22% {
+    background-color: var(--color1_2);
+  }
+  33% {
+    background-color: var(--color1_3);
+  }
+  44% {
+    background-color: var(--color1_4);
+  }
+  55% {
+    background-color: var(--color1_5);
+  }
+  66% {
+    background-color: var(--color1_6);
+  }
+  77% {
+    background-color: var(--color1_7);
+  }
+  88% {
+    background-color: var(--color1_8);
+  }
+  100% {
+    background-color: var(--color1_9);
+  }
 }
