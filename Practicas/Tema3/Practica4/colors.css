@@ -9,10 +9,12 @@
   --color_borde: #dd0a85;
   --color_sombra: whitesmoke;
 
-  /* Tiempo que dura la animacion 1 */
+  /* ANIMACION 1*/
+
+  /* Duracion */
   --tiempo_anim1: 2s;
 
-  /* Colores de la animacion 1 */
+  /* Colores */
   --color1_1: rgb(24, 2, 35);
   --color1_2: rgb(144, 28, 165);
   --color1_3: rgb(225, 87, 187);
@@ -23,7 +25,7 @@
   --color1_8: rgb(224, 163, 192);
   --color1_9: rgb(255, 255, 255);
 
-  /* Delay de las animaciones 1 */
+  /* Delays */
   --delay1_1: calc(var(--tiempo_anim1) / 10);
   --delay1_2: calc(var(--delay1_1) + var(--delay1_1));
   --delay1_3: calc(var(--delay1_2) + var(--delay1_1));
@@ -33,7 +35,7 @@
   --delay1_7: calc(var(--delay1_6) + var(--delay1_1));
   --delay1_8: calc(var(--delay1_7) + var(--delay1_1));
 
-  /* Animaciones 1 */
+  /* Animaciones */
   --animf1: anim1 var(--tiempo_anim1) forwards;
   --animf2: anim1 var(--tiempo_anim1) var(--delay1_1) forwards;
   --animf3: anim1 var(--tiempo_anim1) var(--delay1_2) forwards;
@@ -44,10 +46,12 @@
   --animf8: anim1 var(--tiempo_anim1) var(--delay1_7) forwards;
   --animf9: anim1 var(--tiempo_anim1) var(--delay1_8) forwards;
 
-  /* Tiempo que dura la animacion 2 */
+  /* ANIMACION 2 */
+
+  /* Duración */
   --tiempo_anim2: 15s;
 
-  /* Colores de la animacion 2 */
+  /* Colores */
   --color2_1: rgb(255, 0, 0);
   --color2_2: rgb(255, 127, 0);
   --color2_3: rgb(255, 255, 0);
@@ -57,7 +61,7 @@
   --color2_7: rgb(255, 135, 235);
   --color2_8: rgb(255, 255, 255);
 
-  /* Delay de las animaciones 2 */
+  /* Delays */
   --delay2: (var(--tiempo_anim2) / 24);
   --delay2_1: calc(var(--delay1_8) + var(--tiempo_anim1));
   --delay2_2: calc(var(--delay2_1) + var(--delay2));
@@ -75,7 +79,7 @@
   --delay2_14: calc(var(--delay2_13) + var(--delay2));
   --delay2_15: calc(var(--delay2_14) + var(--delay2));
 
-  /* Animaciones 2 */
+  /* Animaciones */
   --animdia1: anim2 var(--tiempo_anim2) var(--delay2_1) infinite;
   --animdia2: anim2 var(--tiempo_anim2) var(--delay2_2) infinite;
   --animdia3: anim2 var(--tiempo_anim2) var(--delay2_3) infinite;
@@ -176,7 +180,7 @@ h3 {
   animation: var(--animf9);
 }
 
-/* DIAGONALES*/
+/* DIAGONALES */
 .diagonal1 {
   animation: var(--animdia1);
 }
@@ -223,7 +227,7 @@ h3 {
   animation: var(--animdia15);
 }
 
-/* ANIMACION 1*/
+/* ANIMACION 1 */
 @keyframes anim1 {
   11% {
     background-color: var(--color1_1);
@@ -254,7 +258,7 @@ h3 {
   }
 }
 
-/* ANIMACION 2*/
+/* ANIMACION 2 */
 @keyframes anim2 {
   from {
     background-color: var(--color2_8);
