@@ -260,7 +260,7 @@ h3 {
 
 /* ANIMACION 2 */
 @keyframes anim2 {
-  from {
+  0% {
     background-color: var(--color2_8);
   }
   12% {
@@ -284,7 +284,7 @@ h3 {
   84% {
     background-color: var(--color2_7);
   }
-  to {
+  100% {
     background-color: var(--color2_8);
   }
 }
