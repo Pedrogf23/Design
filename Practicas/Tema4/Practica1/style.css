@@ -59,7 +59,7 @@ div.section2 div.flotador:nth-child(2) {
   float: left;
   width: 60%;
   height: 30%;
-  margin-bottom: 3vh;
+  margin-bottom: 2.8vh;
 }
 div.section2 div.flotador:nth-child(3) {
   float: left;
@@ -72,9 +72,13 @@ div.section2 div.flotador:nth-child(3) {
   margin-left: 2.5vw;
   margin-right: 2.5vw;
 }
+div.section2 div.flotador:first-child,
+div.section2 div.flotador:nth-child(3) {
+  margin-bottom: 2.5vh;
+}
 div.section2 div.flotador:last-child {
-  float: left;
+  clear: both;
   width: 80%;
   height: 15%;
-  margin: 2vh 10% 0 10%;
+  margin: 0 auto;
 }
