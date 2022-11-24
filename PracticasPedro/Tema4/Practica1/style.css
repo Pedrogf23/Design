@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sen';
+  font-weight: bold;
+  overflow: hidden;
+}
+div.content {
+  width: 100vw;
+  height: 100vh;
+}
+div.header {
+  height: 10vh;
+  text-align: center;
+  background-color: #0c090d;
+  padding-top: 1.5vh;
+}
+div.header h1 {
+  color: #fffaf0;
+}
+div.section1 {
+  height: 30vh;
+  background-color: #f15946;
+  padding: 0 2.5vw;
+}
+div.section1 div.flotador {
+  padding: 1vh 0.5vw;
+  float: left;
+  width: 21vw;
+  height: 40%;
+  border: solid 2px black;
+  color: #f15946;
+  background-color: #f9c22e;
+  margin: 1.5vh 1.3vw;
+}
+div.section1 div.flotador:nth-child(4) {
+  clear: both;
+}
+div.section2 {
+  background-color: #53b3cb;
+  height: 60vh;
+  padding-top: 3vh;
+}
+div.section2 div.flotador {
+  border: solid 1px #fffaf0;
+  background-color: #e01a4f;
+  color: #fffaf0;
+  padding: 1vh 0.5vw;
+}
+div.section2 div.flotador:first-child {
+  float: right;
+  width: 30%;
+  height: 75%;
+}
+div.section2 div.flotador:nth-child(2) {
+  float: left;
+  width: 60%;
+  height: 30%;
+  margin-bottom: 3vh;
+}
+div.section2 div.flotador:nth-child(3) {
+  float: left;
+  width: 60%;
+  height: 40%;
+}
+div.section2 div.flotador:first-child,
+div.section2 div.flotador:nth-child(2),
+div.section2 div.flotador:nth-child(3) {
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+div.section2 div.flotador:last-child {
+  float: left;
+  width: 80%;
+  height: 15%;
+  margin-top: 2vh;
+  margin: auto;
+}
