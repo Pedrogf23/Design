@@ -30,7 +30,7 @@ div.section1 div.flotador {
   width: 21vw;
   height: 40%;
   border: solid 2px black;
-  color: #f15946;
+  color: #e01a4f;
   background-color: #f9c22e;
   margin: 1.5vh 1.3vw;
   font-size: 1.5em;
@@ -49,6 +49,10 @@ div.section2 div.flotador {
   color: #fffaf0;
   padding: 1vh 0.5vw;
   font-size: 1.5em;
+}
+div.section2 div.flotador:nth-child(2),
+div.section2 div.flotador:nth-child(3) {
+  background-color: #f15946;
 }
 div.section2 div.flotador:first-child {
   float: right;
