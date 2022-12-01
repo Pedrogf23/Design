@@ -9,8 +9,8 @@
 }
 
 body {
-  background: rgb(3, 26, 107);
-  background: linear-gradient(0deg, rgba(3, 26, 107, 1) 0%, rgba(5, 178, 220, 1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
 }
 
 div.content {
@@ -20,16 +20,19 @@ div.content {
 
 div.content div.titulo {
   border-radius: 20px;
-  border: 1px solid black;
   margin: 0 0 2vh 0;
+  background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
+  box-shadow: 10px 10px 10px black;
 }
 div.content div.titulo h1,
 div.content div.titulo h2 {
   text-align: center;
   font-family: 'Nerko One', cursive;
+  color: rgba(9, 9, 121, 1);
 }
 div.content div.titulo h1 {
   font-size: 5vw;
+  text-decoration: overline;
 }
 div.content div.titulo h2 {
   font-size: 4vw;
@@ -37,9 +40,10 @@ div.content div.titulo h2 {
 
 div.content div.categorias {
   border-radius: 20px;
-  border: 1px solid black;
   margin: 0 0 2vh 0;
   padding: 1vw;
+  background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
+  box-shadow: 10px 10px 10px black;
 }
 div.content div.categorias::after {
   content: '.';
@@ -58,27 +62,31 @@ div.content div.categorias div img {
   border-radius: 50%;
   border: 0.5vw solid #031a6b;
   margin: 0 0 0.2vh 0;
-  transition: all 2s;
+  transition: all 0.5s;
 }
 div.content div.categorias div img:hover {
   box-shadow: 10px 10px 10px black;
   transform: scale(1.1);
+  transition: all 2s;
 }
 div.content div.categorias div p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 3vw;
+  color: white;
 }
 
 div.content div.entrantes {
   border-radius: 20px;
-  border: 1px solid black;
   margin: 0 0 2vh 0;
   padding: 1vw;
+  background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
+  box-shadow: 10px 10px 10px black;
 }
 div.content div.entrantes h1 {
   text-align: center;
   font-family: 'Nerko One', cursive;
-  font-size: 3vw;
+  font-size: 4em;
+  color: white;
 }
 div.content div.entrantes hr {
   border: 1px solid black;
@@ -86,7 +94,8 @@ div.content div.entrantes hr {
 }
 div.content div.entrantes div p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 2vw;
+  font-size: 2em;
+  color: white;
 }
 div.content div.entrantes div::after {
   content: '.';
@@ -95,13 +104,61 @@ div.content div.entrantes div::after {
   display: block;
   clear: both;
 }
-div.content div.entrantes div.linea p:first-child {
+div.content div.entrantes div.linea p:first-of-type {
   float: left;
+  width: 30%;
+}
+div.content div.entrantes div.linea hr {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  border: 1px dashed white;
 }
 div.content div.entrantes div.linea img {
   float: right;
-  width: 2vw;
+  height: 3.5vh;
+  transition: all 0.5s;
+}
+div.content div.entrantes div.linea img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
 }
 div.content div.entrantes div.linea p:last-of-type {
   float: right;
+  width: 12vw;
+  text-align: right;
+  margin: 0 0 0 1vw;
+  width: 25%;
+}
+
+/**/
+
+div.content div.alergenos {
+  border-radius: 20px;
+  margin: 0 0 2vh 0;
+  padding: 1vw;
+  background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
+  box-shadow: 10px 10px 10px black;
+}
+div.content div.alergenos div {
+  float: left;
+  text-align: center;
+}
+div.content div.alergenos::after {
+  content: '.';
+  visibility: hidden;
+  height: 0;
+  display: block;
+  clear: both;
+}
+div.content div.alergenos div {
+  width: 14.2857143%; /* Resultado de dividir el 100% entre 7 divs */
+}
+div.content div.alergenos div img {
+  width: 100%;
+}
+div.content div.alergenos div p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2vw;
+  color: white;
 }
