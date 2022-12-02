@@ -21,20 +21,29 @@ div.content {
 /* Divs */
 div.content div.titulo,
 div.content div.categorias,
-div.content div.entrantes,
+div.content div.carta,
 div.content div.alergenos {
   border-radius: 20px;
   margin: 0 0 2vh 0;
   padding: 1vw;
-  background: url('./img/fondo.png') #fff;
+  background: url('./img/fondo.png') #eee;
   box-shadow: 10px 10px 10px black;
 }
 
+/* Títulos */
 h1,
 h2 {
   font-weight: 300;
 }
 
+/* Botón Volver Arriba */
+div.content div a h1:last-of-type {
+  color: black;
+  text-decoration: underline black;
+  font-size: 4vw;
+}
+
+/* Div Título */
 div.content div.titulo h1,
 div.content div.titulo h2 {
   text-align: center;
@@ -48,14 +57,7 @@ div.content div.titulo h2 {
   font-size: 4vw;
 }
 
-/* div.content div.categorias {
-  border-radius: 20px;
-  margin: 0 0 2vh 0;
-  padding: 1vw;
-  background-color: #89ce94;
-  background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
-  box-shadow: 10px 10px 10px black;
-} */
+/* Div Categorías */
 div.content div.categorias::after {
   content: '.';
   visibility: hidden;
@@ -86,55 +88,48 @@ div.content div.categorias div p {
   font-size: 3vw;
 }
 
-/* div.content div.entrantes {
-  border-radius: 20px;
-  margin: 0 0 2vh 0;
-  padding: 1vw;
-  background-color: #89ce94;
-  background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
-  box-shadow: 10px 10px 10px black;
-} */
-div.content div.entrantes h1 {
+/* Carta */
+div.content div.carta h1 {
   text-align: center;
   font-family: 'Nerko One', cursive;
   font-size: 4em;
 }
-div.content div.entrantes hr {
+div.content div.carta hr {
   border: 1px solid black;
   margin: 0 0 0.6vw 0;
 }
-div.content div.entrantes div p {
+div.content div.carta div p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 2em;
 }
-div.content div.entrantes div::after {
+div.content div.carta div::after {
   content: '.';
   visibility: hidden;
   height: 0;
   display: block;
   clear: both;
 }
-div.content div.entrantes div.linea p:first-of-type {
+div.content div.carta div.linea p:first-of-type {
   float: left;
   width: 30%;
 }
-div.content div.entrantes div.linea hr {
+div.content div.carta div.linea hr {
   display: block;
   width: 95%;
   margin: 0 auto;
   border: 1px dashed black;
 }
-div.content div.entrantes div.linea img {
+div.content div.carta div.linea img {
   float: right;
   height: 3.5vh;
   transition: all 0.5s;
   filter: drop-shadow(2px 2px 2px black);
 }
-div.content div.entrantes div.linea img:hover {
+div.content div.carta div.linea img:hover {
   transform: scale(1.2);
   transition: all 1s;
 }
-div.content div.entrantes div.linea p:last-of-type {
+div.content div.carta div.linea p:last-of-type {
   float: right;
   width: 12vw;
   text-align: right;
@@ -142,16 +137,7 @@ div.content div.entrantes div.linea p:last-of-type {
   width: 25%;
 }
 
-/**/
-
-/* div.content div.alergenos {
-  border-radius: 20px;
-  margin: 0 0 2vh 0;
-  padding: 1vw;
-  background-color: #89ce94;
-  background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
-  box-shadow: 10px 10px 10px black;
-} */
+/* Alérgenos */
 div.content div.alergenos div {
   float: left;
   text-align: center;
