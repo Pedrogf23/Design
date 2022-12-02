@@ -26,8 +26,7 @@ div.content div.alergenos {
   border-radius: 20px;
   margin: 0 0 2vh 0;
   padding: 1vw;
-  background-color: #ccc;
-  background-image: url('./img/fondo.png');
+  background: url('./img/fondo.png') #fff;
   box-shadow: 10px 10px 10px black;
 }
 
