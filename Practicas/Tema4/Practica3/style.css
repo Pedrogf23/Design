@@ -37,8 +37,11 @@ h2 {
 }
 
 /* Botón Volver Arriba */
-div.content div a h1:last-of-type {
+div.content div a {
   color: black;
+  text-decoration: none;
+}
+div.content div a h1:last-of-type {
   text-decoration: underline black;
   font-size: 4vw;
 }
