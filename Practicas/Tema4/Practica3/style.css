@@ -31,18 +31,15 @@ div.content div.alergenos {
   box-shadow: 10px 10px 10px black;
 }
 
-/* Letras */
-p,
 h1,
 h2 {
-  color: black;
+  font-weight: 300;
 }
 
 div.content div.titulo h1,
 div.content div.titulo h2 {
   text-align: center;
   font-family: 'Nerko One', cursive;
-  font-weight: 300;
 }
 div.content div.titulo h1 {
   font-size: 5vw;
@@ -83,7 +80,7 @@ div.content div.categorias div img:hover {
   box-shadow: 10px 10px 10px black;
   transform: scale(1.1);
   transition: all 2s;
-  border-radius: 5px;
+  border-radius: 40%;
 }
 div.content div.categorias div p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -166,6 +163,15 @@ div.content div.alergenos::after {
   height: 0;
   display: block;
   clear: both;
+}
+div.content div.alergenos h1 {
+  text-align: center;
+  font-family: 'Nerko One', cursive;
+  font-size: 4em;
+}
+div.content div.alergenos hr {
+  border: 1px solid black;
+  margin: 0 0 0.6vw 0;
 }
 div.content div.alergenos div {
   width: 14.2857143%; /* Resultado de dividir el 100% entre 7 divs */
