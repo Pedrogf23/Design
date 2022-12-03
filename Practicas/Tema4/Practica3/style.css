@@ -8,6 +8,7 @@
   */
 }
 
+/* Fondo */
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +18,7 @@ body {
   background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
 }
 
+/* Contenido */
 div.content {
   width: 60%;
   margin: 1vw auto;
@@ -41,13 +43,18 @@ h2 {
 }
 
 /* Botón Volver Arriba */
-div.content div a {
+div.content div.linea:last-child {
+  float: none;
+  width: 50%;
+  margin: 0 auto;
+}
+div.content div.linea a[href='#categorias'] {
   color: black;
   text-decoration: none;
 }
 div.content div a h1:last-of-type {
   text-decoration: underline black;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 /* Div Título */
@@ -99,7 +106,7 @@ div.content div.categorias div p {
 div.content div.carta h1 {
   text-align: center;
   font-family: 'Nerko One', cursive;
-  font-size: 4em;
+  font-size: 5em;
 }
 div.content div.carta hr {
   border: 1px solid black;
