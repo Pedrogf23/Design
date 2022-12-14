@@ -10,23 +10,21 @@
   --li-width: 150px; /* Ancho de los elementos de las listas */
   --li-padd: 12px; /* Padding de los elementos de las listas */
 
+  /* Colroes */
   --color-white: #fff;
   --color-black: #2e0404;
   --color-red: #dc143c;
 }
 
-main {
-  height: 100vh;
-}
-
 /* Fondo */
 div.content {
-  height: 94.6%;
+  height: calc(100vh - var(--li-height));
   background: center url(background.jpg);
-  width: 100%;
+  width: 100vw;
   min-width: calc(var(--li-width) * 5); /* El ancho minimo es la suma del ancho de cada li presente en el menu */
   overflow-x: hidden;
 }
+/* Título */
 div.content h1 {
   color: var(--color-white);
   position: relative;
@@ -37,6 +35,7 @@ div.content h1 {
   margin: 0 auto;
   font-family: 'Suez One', serif;
 }
+/* Texto */
 div.content p {
   color: var(--color-white);
   position: relative;
@@ -47,12 +46,13 @@ div.content p {
   margin: 0 auto;
   z-index: 1;
 }
+/* Fuente del menú y el texto */
 p,
 li {
   font-family: 'KoHo', sans-serif;
 }
 
-/* Navegación */
+/* Barra de navegación */
 nav {
   height: var(--li-height);
   background-color: var(--color-red);
@@ -78,105 +78,55 @@ nav ul.main ul {
   display: none;
 }
 
-/* Desplegable emotions */
-nav a.emotions:hover ~ ul.emotions {
+/* Desplegables */
+nav a:hover + ul {
   display: block;
 }
-nav ul.emotions:hover {
+nav ul ul:hover {
   display: block;
 }
-nav ul.emotions {
+nav ul ul {
   float: left;
   position: absolute;
-  top: var(--li-height);
-  left: var(--li-width);
   width: var(--li-width);
 }
 
-/* Desplegable feelings */
-nav a.feelings:hover ~ ul.feelings {
-  display: block;
+/* Emotions */
+nav ul ul.emotions {
+  top: var(--li-height);
+  left: var(--li-width);
 }
-nav ul.feelings:hover {
-  display: block;
-}
-nav ul.feelings {
-  float: left;
-  position: absolute;
+
+/* Feelings */
+nav ul ul.feelings {
   top: var(--li-height);
   left: calc(var(--li-width) * 2);
-  width: var(--li-width);
 }
 
-/* Desplegable feelings positive */
-nav a.positive:hover ~ ul.positive {
-  display: block;
-}
-nav ul.positive:hover {
-  display: block;
-}
-nav ul.positive {
-  float: left;
-  position: absolute;
+/* Feelings positive */
+nav ul ul.positive {
   left: var(--li-width);
-  width: var(--li-width);
 }
 
-/* Desplegable feelings neutral */
-nav a.neutral:hover ~ ul.neutral {
-  display: block;
-}
-nav ul.neutral:hover {
-  display: block;
-}
-nav ul.neutral {
-  float: left;
-  position: absolute;
+/* Feelings neutral */
+nav ul ul.neutral {
   top: var(--li-height);
   left: var(--li-width);
-  width: var(--li-width);
 }
 
-/* Desplegable feelings negative */
-nav a.negative:hover ~ ul.negative {
-  display: block;
-}
-nav ul.negative:hover {
-  display: block;
-}
-nav ul.negative {
-  float: left;
-  position: absolute;
+/* Feelings negative */
+nav ul ul.negative {
   top: calc(var(--li-height) * 2);
   left: var(--li-width);
-  width: var(--li-width);
 }
 
-/* Desplegable feelings negative simple */
-nav a.simple:hover ~ ul.simple {
-  display: block;
-}
-nav ul.simple:hover {
-  display: block;
-}
-nav ul.simple {
-  float: left;
-  position: absolute;
+/* Feelings negative simple */
+nav ul ul.simple {
   left: var(--li-width);
-  width: var(--li-width);
 }
 
-/* Desplegable feelings negative complex */
-nav a.complex:hover ~ ul.complex {
-  display: block;
-}
-nav ul.complex:hover {
-  display: block;
-}
-nav ul.complex {
-  float: left;
-  position: absolute;
+/* Feelings negative complex */
+nav ul ul.complex {
   top: var(--li-height);
   left: var(--li-width);
-  width: var(--li-width);
 }
