@@ -21,7 +21,7 @@ nav {
   height: var(--li-height);
   background-color: var(--color-red);
   min-width: calc(var(--li-width) * 5); /* El ancho minimo es la suma del ancho de cada li presente en el menu */
-  z-index: 5;
+  z-index: 1;
   position: relative;
 }
 nav ul li {
@@ -43,7 +43,7 @@ nav ul li a {
   color: var(--color-white);
   padding: var(--a-padd);
   text-decoration: none;
-  transition: all 0.5s;
+  transition: background-color 0.5s;
 }
 nav ul li a:hover {
   background-color: var(--color-black);
@@ -120,7 +120,7 @@ div.content p {
   font-size: 2.5em;
   width: 90%;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 0;
 }
 /* Fuente del menú y el texto */
 p,
