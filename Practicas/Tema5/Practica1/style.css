@@ -6,14 +6,89 @@
 
 /* Variables */
 :root {
-  --li-height: 50px; /* Alto de los elementos de las listas */
-  --li-width: 150px; /* Ancho de los elementos de las listas */
-  --li-padd: 12px; /* Padding de los elementos de las listas */
+  --li-height: 70px; /* Alto de los elementos de las listas */
+  --li-width: 200px; /* Ancho de los elementos de las listas */
+  --a-padd: 12px; /* Padding de los enlaces dentro de los elementos de las listas */
 
-  /* Colroes */
+  /* Colores */
   --color-white: #fff;
   --color-black: #2e0404;
   --color-red: #dc143c;
+}
+
+/* Nav bar */
+nav {
+  height: var(--li-height);
+  background-color: var(--color-red);
+  min-width: calc(var(--li-width) * 5); /* El ancho minimo es la suma del ancho de cada li presente en el menu */
+  z-index: 5;
+  position: relative;
+}
+nav ul li {
+  text-align: center;
+  float: left;
+  list-style-type: none;
+  width: var(--li-width);
+  height: var(--li-height);
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+nav ul li p {
+  font-size: 2rem;
+}
+nav ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: var(--color-white);
+  padding: var(--a-padd);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: var(--color-black);
+}
+nav ul.main ul {
+  display: none;
+}
+
+/* Estilo general de todos los menús desplegables */
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul ul:hover {
+  display: block;
+}
+nav ul ul {
+  float: left;
+  position: absolute;
+  width: var(--li-width);
+}
+nav ul ul p {
+  font-size: 1.5rem;
+}
+nav ul ul li {
+  text-align: left;
+}
+nav ul ul a {
+  padding: calc(var(--a-padd) + 6px) calc(var(--a-padd) * 2);
+}
+
+/* Desplazamiento horizontal de los menús desplegables dentro de feelings */
+nav ul.feelings ul {
+  left: var(--li-width);
+}
+
+/* Desplazamiento vertical de los menús desplegables dentro de feelings */
+nav ul.positive,
+nav ul.simple {
+  top: 0;
+}
+nav ul.neutral,
+nav ul.complex {
+  top: var(--li-height);
+}
+nav ul.negative {
+  top: calc(var(--li-height) * 2);
 }
 
 /* Fondo */
@@ -50,83 +125,4 @@ div.content p {
 p,
 li {
   font-family: 'KoHo', sans-serif;
-}
-
-/* Barra de navegación */
-nav {
-  height: var(--li-height);
-  background-color: var(--color-red);
-  min-width: calc(var(--li-width) * 5); /* El ancho minimo es la suma del ancho de cada li presente en el menu */
-  z-index: 5;
-  position: relative;
-}
-nav li {
-  text-align: center;
-  float: left;
-  list-style-type: none;
-  font-size: 1.2em;
-  width: var(--li-width);
-  height: var(--li-height);
-  padding: var(--li-padd);
-  color: var(--color-white);
-  background-color: var(--color-red);
-}
-nav li:hover {
-  background-color: var(--color-black);
-}
-nav ul.main ul {
-  display: none;
-}
-
-/* Desplegables */
-nav a:hover + ul {
-  display: block;
-}
-nav ul ul:hover {
-  display: block;
-}
-nav ul ul {
-  float: left;
-  position: absolute;
-  width: var(--li-width);
-}
-
-/* Emotions */
-nav ul ul.emotions {
-  top: var(--li-height);
-  left: var(--li-width);
-}
-
-/* Feelings */
-nav ul ul.feelings {
-  top: var(--li-height);
-  left: calc(var(--li-width) * 2);
-}
-
-/* Feelings positive */
-nav ul ul.positive {
-  left: var(--li-width);
-}
-
-/* Feelings neutral */
-nav ul ul.neutral {
-  top: var(--li-height);
-  left: var(--li-width);
-}
-
-/* Feelings negative */
-nav ul ul.negative {
-  top: calc(var(--li-height) * 2);
-  left: var(--li-width);
-}
-
-/* Feelings negative simple */
-nav ul ul.simple {
-  left: var(--li-width);
-}
-
-/* Feelings negative complex */
-nav ul ul.complex {
-  top: var(--li-height);
-  left: var(--li-width);
 }
