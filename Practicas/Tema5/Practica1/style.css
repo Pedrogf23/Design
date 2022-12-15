@@ -71,7 +71,7 @@ nav ul ul li {
   text-align: left;
 }
 nav ul ul a {
-  padding: calc(var(--a-padd) + 6px) calc(var(--a-padd) * 2);
+  padding: calc(var(--a-padd) * 1.5) calc(var(--a-padd) * 2);
 }
 
 /* Desplazamiento horizontal de los menús desplegables dentro de feelings */
