@@ -43,6 +43,7 @@ nav ul li a {
   color: var(--color-white);
   padding: var(--a-padd);
   text-decoration: none;
+  transition: all 0.5s;
 }
 nav ul li a:hover {
   background-color: var(--color-black);
