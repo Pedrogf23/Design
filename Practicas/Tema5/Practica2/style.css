@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo */
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+main article {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/burger.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 5%;
+  position: absolute;
+  top: 0;
+}
+main article h1 {
+  color: #f5f5f5;
+  font-family: 'Permanent Marker';
+  font-size: 4em;
+  position: relative;
+}
+main article p {
+  font-family: 'Cantarell';
+  background-color: #f5f5f580;
+  position: relative;
+  width: 60%;
+  top: 10%;
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+/* Botón hamburguesa */
+main input.menu-btn {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  opacity: 0;
+  top: 50px;
+  right: 50px;
+  user-select: none;
+  z-index: 4;
+}
+main input:hover {
+  cursor: pointer;
+}
+main div.menu-bars {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  user-select: none;
+  z-index: 3;
+}
+main div.menu-bars span {
+  width: 100%;
+  display: block;
+  border-top: 5px solid #f1f113;
+  border-radius: 20px;
+  user-select: none;
+  position: absolute;
+  transition: all 1s;
+}
+main div.menu-bars span:first-child {
+  top: 0px;
+}
+main div.menu-bars span:nth-child(2) {
+  top: 17px;
+}
+main div.menu-bars span:last-child {
+  bottom: 0px;
+}
+
+/* Animación botón */
+main input.menu-btn:checked ~ div.menu-bars span {
+  border-color: #ff685a;
+  transition: all 1s;
+}
+main input.menu-btn:checked ~ div.menu-bars span:first-child {
+  transform-origin: 0%;
+  transform: rotateZ(45deg);
+}
+main input.menu-btn:checked ~ div.menu-bars span:nth-child(2) {
+  width: 0px;
+  opacity: 0;
+}
+main input.menu-btn:checked ~ div.menu-bars span:last-child {
+  transform-origin: 0%;
+  transform: rotateZ(-45deg);
+}
+
+/* Menú hamburguesa */
+main nav {
+  width: 30%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  left: 100%;
+  background: url(./img/texture.png), linear-gradient(#321325e6 0%, #5f0f40e6 50%, #ce4a11e6 100%);
+}
+main input.menu-btn ~ div.menu-bars ~ nav {
+  transition: all 1s;
+}
+main input.menu-btn:checked ~ div.menu-bars ~ nav {
+  left: 70%;
+}
