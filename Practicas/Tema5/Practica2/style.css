@@ -24,14 +24,14 @@ main article {
 main article h1 {
   color: #f5f5f5;
   font-family: 'Permanent Marker';
-  font-size: 4em;
+  font-size: 4.7em;
   position: relative;
 }
 main article p {
   font-family: 'Cantarell';
   background-color: #f5f5f580;
   position: relative;
-  width: 60%;
+  width: 65%;
   top: 10%;
   padding: 1%;
   border-radius: 10px;
@@ -102,7 +102,7 @@ main input.menu-btn:checked ~ div.menu-bars span:last-child {
 main nav {
   width: 30%;
   height: 200%;
-  top: -10px;
+  top: -200px;
   position: relative;
   z-index: 1;
   left: 100%;
@@ -121,7 +121,7 @@ nav ul {
   width: 90%;
   margin: 0 auto;
   position: relative;
-  top: 6%;
+  top: 16%;
   list-style-type: none;
 }
 nav ul li {
@@ -145,5 +145,5 @@ nav img {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 12%;
+  top: 22%;
 }
