@@ -81,19 +81,19 @@ main div.menu-bars span:last-child {
 }
 
 /* Animación botón */
-main input.menu-btn:checked ~ div.menu-bars span {
+main input.menu-btn:checked + div.menu-bars span {
   border-color: #ff685a;
   transition: all 1s;
 }
-main input.menu-btn:checked ~ div.menu-bars span:first-child {
+main input.menu-btn:checked + div.menu-bars span:first-child {
   transform-origin: 0%;
   transform: rotateZ(45deg);
 }
-main input.menu-btn:checked ~ div.menu-bars span:nth-child(2) {
+main input.menu-btn:checked + div.menu-bars span:nth-child(2) {
   width: 0px;
   opacity: 0;
 }
-main input.menu-btn:checked ~ div.menu-bars span:last-child {
+main input.menu-btn:checked + div.menu-bars span:last-child {
   transform-origin: 0%;
   transform: rotateZ(-45deg);
 }
@@ -108,10 +108,10 @@ main nav {
   left: 100%;
   background: url(./img/texture.png), linear-gradient(#321325e6 0%, #5f0f40e6 50%, #ce4a11e6 100%);
 }
-main input.menu-btn ~ div.menu-bars ~ nav {
+main input.menu-btn + div.menu-bars + nav {
   transition: all 1s;
 }
-main input.menu-btn:checked ~ div.menu-bars ~ nav {
+main input.menu-btn:checked + div.menu-bars + nav {
   left: 70%;
 }
 
