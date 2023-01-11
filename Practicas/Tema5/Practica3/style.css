@@ -156,10 +156,10 @@ main section.menu div.content div.img {
   position: relative;
   top: 50px;
   border: 2px solid #d18bde;
-  height: 29.9vh;
 }
 main section.menu div.content div.img img {
   width: 100%;
+  height: 100%;
 }
 main section.menu div.content div.img h1 {
   position: absolute;
